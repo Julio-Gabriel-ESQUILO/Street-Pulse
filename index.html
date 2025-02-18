@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Street Pulse - A melhor loja de moda urbana do Brasil">
+    <meta name="keywords" content="Moda urbana, Camisas, Streetwear, Loja online">
+    <meta name="author" content="Street Pulse">
+    <title>Street Pulse - Loja de Moda Urbana</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- 🔝 Navbar aprimorada -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow-lg">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold text-beige" href="#">Street Pulse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Coleção</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link text-cyan" href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🎭 Hero Section aprimorada -->
+    <header class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="hero-content">
+            <h1 class="display-3 fw-bold text-black">Vista o seu estilo</h1>
+            <p class="lead text-gray">Moda urbana para quem quer se destacar</p>
+            <a href="#colecao" class="btn btn-dark btn-lg mt-3">Explorar Coleção</a>
+        </div>
+    </header>
+
+    <!-- 🛍️ Banner de Promoções -->
+    <section class="container-fluid promo-banner text-center py-4 bg-primary text-light">
+        <h3 class="fw-bold">FRETE GRÁTIS para compras acima de R$150,00!</h3>
+    </section>
+
+    <!-- 🛍️ Produtos em Destaque -->
+    <section class="container py-5" id="colecao">
+        <h2 class="text-center display-5 fw-bold">Destaques</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="camisa1.jpg" class="card-img-top" alt="Camisa 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camisa Street X</h5>
+                        <p class="card-text">R$99,90</p>
+                        <button class="btn btn-cyan add-to-cart" data-id="1" data-name="Camisa Street X" data-price="99.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="camisa2.jpg" class="card-img-top" alt="Camisa 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camisa Urban Flow</h5>
+                        <p class="card-text">R$119,90</p>
+                        <button class="btn btn-cyan add-to-cart" data-id="2" data-name="Camisa Urban Flow" data-price="119.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="camisa3.jpg" class="card-img-top" alt="Camisa 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Camisa Minimal</h5>
+                        <p class="card-text">R$89,90</p>
+                        <button class="btn btn-cyan add-to-cart" data-id="3" data-name="Camisa Minimal" data-price="89.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📷 Instagram Feed aprimorado -->
+    <section class="container py-5">
+        <h2 class="text-center display-5 fw-bold">Nosso Instagram</h2>
+        <div id="instagram-feed" class="d-flex justify-content-center gap-3"></div>
+    </section>
+
+    <!-- 📌 Footer refinado -->
+    <footer class="text-center py-4 bg-black text-white">
+        <p>&copy; 2025 Street Pulse - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="orders.js"></script>
+    <script src="instagram.js"></script>
+    <script src="auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+/* 🔹 Reset e Tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5e3c7; /* Bege refinado */
+    color: #333;
+    text-align: center;
+}
+
+/* 🔹 Navbar */
+.navbar {
+    background-color: #000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #008b8b; /* Ciano acinzentado */
+}
+
+/* 🔹 Hero Section */
+.hero {
+    background: url('hero-image.svg') no-repeat center center/cover;
+    padding: 120px 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.hero .btn {
+    background-color: #008b8b;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #006b6b;
+}
+
+/* 🔹 Produtos */
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 10px;
+}
+
+.produto h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.produto .btn {
+    background-color: #008b8b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.produto .btn:hover {
+    background-color: #006b6b;
+}
+
+/* 🔹 Carrinho de Compras */
+.cart {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.cart-total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.checkout-btn {
+    background: #008b8b;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background: #006b6b;
+}
+
+/* 🔹 Encomendas */
+#order-form input {
+    border: 2px solid #008b8b;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#order-form input:focus {
+    border-color: #006b6b;
+    outline: none;
+}
+
+#order-form .btn {
+    background: #008b8b;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#order-form .btn:hover {
+    background: #006b6b;
+}
+
+/* 🔹 Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px;
+    }
+    
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #order-form input {
+        width: 90%;
+    }
+}
